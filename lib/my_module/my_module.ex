@@ -12,6 +12,7 @@ defmodule MyModule do
 
       def exception(response) do
         %{
+          the_exception: __MODULE__,
           status: 404,
           message: "Could not access State geo ids.  Response: '#{response}'",
           more_info: "https://tripping.atlassian.net/wiki/spaces/TECH/pages/303005720/StateGeoUnavailableError",
